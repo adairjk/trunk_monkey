@@ -1,0 +1,28 @@
+div {
+    display: inline-block;
+}
+.block {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 15px;
+    display: inline-block;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.big {
+    width: 200px;
+    height: 200px;
+}
+
+.small {
+    width: 100px;
+    height: 100px;
+}
