@@ -1,5 +1,6 @@
 div {
     display: inline-block;
+    background-color: black;
 }
 .block {
     width: 100px;
@@ -23,6 +24,10 @@ div {
 }
 
 .small {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+}
+
+.on {
+    background-color: greenyellow;
 }
