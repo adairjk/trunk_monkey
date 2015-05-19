@@ -1,8 +1,36 @@
 //= require jquery-ui
 
+var score = 0;
+var addScore = function() {
+    score = score + 1;
+    $('#score').text(score);
+};
+
+var subtractScore = function() {
+    score = score - 1;
+    $('#score').text(score);
+};
+
+var randomNumber = function() {
+    return Math.floor(Math.random() * 5);
+};
+
+var randomPair = function() {
+    var rand1 = randomNumber();
+    var rand2 = randomNumber();
+    return [rand1,rand2];
+};
+var buildArray = function() {
+    var array = [];
+    for(var i = 0; i < 5; i++) {
+        array.push(randomPair());
+    }
+    return array;
+};
+
 $(document).ready(function(){
 
-    var score = 0;
+    //var score = 0;
 
     $('.block').click(function() {
 
@@ -53,28 +81,8 @@ $(document).ready(function(){
         }
     };
 
-    var addScore = function() {
-        score = score + 1;
-        $('#score').text(score);
-    };
-
-    var subtractScore = function() {
-        score = score - 1;
-        $('#score').text(score);
-    };
-
     var clearBoard = function() {
         $('.block').removeClass('on');
-    };
-
-    var randomNumber = function() {
-        return Math.floor(Math.random() * 5);
-    };
-
-    var randomPair = function() {
-        var rand1 = randomNumber();
-        var rand2 = randomNumber();
-        return [rand1,rand2];
     };
 
     var setupGame = function(array) {
@@ -84,14 +92,6 @@ $(document).ready(function(){
             subtractScore();
             randomNumber();
         }
-    };
-
-    var buildArray = function() {
-        var array = [];
-        for(var i = 0; i < 5; i++) {
-            array.push(randomPair());
-        }
-        return array;
     };
 
     var isGameOver = function() {
