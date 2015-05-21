@@ -1,0 +1,22 @@
+// Place all the styles related to the puzzle controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.board {
+  position: relative;
+  top: 25px;
+  left: 100px;
+}
+
+.droppable {
+  height: 100px;
+  width: 100px;
+  border: solid 1px black;
+  padding: 0px;
+  margin-bottom: -10px;
+  background-color: white;
+}
+
+.hover {
+  background-color: yellow;
+}
