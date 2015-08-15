@@ -4,3 +4,25 @@
 ===
 
 
+Running tests
+==
+
+rake jasmine:ci
+
+
+Launch
+==
+
+rails s
+
+Blackout
+==
+
+http://localhost:3000
+
+Puzzle
+==
+
+localhost:3000/puzzle
+
+
