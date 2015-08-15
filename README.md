@@ -4,26 +4,25 @@
 ===
 
 
-Running tests
-====
+## Running tests
 
 ```
 rake jasmine:ci
 ```
 
-#### Launch
+## Launch
 
 ```
 rails s
 ```
 
-#### Blackout
+## Blackout
 
 ```
 http://localhost:3000
 ```
 
-#### Puzzle
+## Puzzle
 
 ```
 localhost:3000/puzzle
